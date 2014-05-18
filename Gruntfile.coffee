@@ -1,12 +1,6 @@
 module.exports = (grunt) ->
 
-    grunt.task.loadNpmTasks 'grunt-node-webkit-builder'
-    grunt.task.loadNpmTasks 'grunt-contrib-coffee'
-    grunt.task.loadNpmTasks 'grunt-exec'
-    grunt.task.loadNpmTasks 'grunt-contrib-watch'
-    grunt.task.loadNpmTasks 'grunt-contrib-less'
-    grunt.task.loadNpmTasks 'grunt-contrib-copy'
-    grunt.task.loadNpmTasks 'grunt-contrib-clean'
+    require('load-grunt-tasks') grunt
 
     grunt.initConfig
         pkg: 
