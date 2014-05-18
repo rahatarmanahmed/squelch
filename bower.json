@@ -24,7 +24,8 @@
   "dependencies": {
     "angular": "~1.2.16",
     "fontawesome": "~4.0.3",
-    "angular-bootstrap-nav-tree": "*",
-    "angular-ui-router": "~0.2.10"
+    "angular-bootstrap-nav-tree": "rahatarmanahmed/angular-bootstrap-nav-tree",
+    "angular-ui-router": "~0.2.10",
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.2.3"
   }
 }

@@ -7,6 +7,7 @@ app.factory "buffer", ["$rootScope", ($rootScope) ->
 	client's status window buffer.
 	###
 	append: (clientID, channel, message) ->
+		console.log "bufferin: #{message}"
 		@buffer[clientID] = {} if not @buffer[clientID]?
 		@buffer[clientID][channel] = [] if not @buffer[clientID][channel]?
 		@buffer[clientID][channel].push

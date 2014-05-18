@@ -50,7 +50,7 @@ module.exports = (grunt) ->
                 cwd: './node_modules/nodewebkit/bin'
                 cmd: ->
                     if process.platform is 'win32'
-                        'start /b nodewebkit ../../../app'
+                        'start /b node nodewebkit ../../../app'
                     else
                         'nodewebkit ../../../app &'
 

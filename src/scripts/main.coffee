@@ -1,4 +1,4 @@
-app = angular.module 'squelch', ['ui.router', 'angularBootstrapNavTree']
+app = angular.module 'squelch', ['ui.router', 'angularBootstrapNavTree', 'cfp.hotkeys']
 
 app.config ["$stateProvider", ($stateProvider) ->
 	$stateProvider
@@ -19,4 +19,12 @@ app.config ["$stateProvider", ($stateProvider) ->
 				"main-view":
 					templateUrl: "partials/channelView.html"
 					controller: "ChannelController"
+]
+.config ["hotkeysProvider", (hotkeysProvider) ->
+	hotkeysProvider.includeCheatSheet = false;
+	Mousetrap.stopCallback = (event, element, combo) ->
+		if (' ' + element.className + ' ').indexOf(' mousetrap ') > -1
+			return false
+		# return element.tagName == 'INPUT' or element.tagName == 'SELECT' or element.tagName == 'TEXTAREA' or (element.contentEditable && element.contentEditable == 'true')
+		return element.tagName == 'SELECT' or element.tagName == 'TEXTAREA' or (element.contentEditable && element.contentEditable == 'true')
 ]

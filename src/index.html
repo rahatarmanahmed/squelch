@@ -3,6 +3,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="bower_components/angular-bootstrap-nav-tree/dist/abn_tree.css">
 		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="bower_components/angular-hotkeys/src/hotkeys.css">
 		<link rel="stylesheet" href="style/sidebar.css">
 		<link rel="stylesheet" href="style/mainView.css">
 		<link rel="stylesheet" href="style/style.css">
@@ -22,10 +23,14 @@
 		</div>
 		<div id="main-view" ui-view="main-view">
 		</div>
+		<script src="bower_components/mousetrap/mousetrap.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/angular-hotkeys/src/hotkeys.js"></script>
 		<script src="scripts/main.js"></script>
+		<script src="scripts/services/squelchStateService.js"></script>
 		<script src="scripts/services/bufferService.js"></script>
+		<script src="scripts/services/inputService.js"></script>
 		<script src="scripts/services/sidebarService.js"></script>
 		<script src="scripts/services/clientService.js"></script>
 		<script src="scripts/controllers/sidebarController.js"></script>

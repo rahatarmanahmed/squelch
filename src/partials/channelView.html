@@ -1,3 +1,6 @@
-<span ng-repeat-start="line in buffer track by $index" >[{{line.time | date:"HH:mm:ss"}}]</span>
-<span>{{line.message}}</span>
-<br ng-repeat-end/>
+<div id="output">
+	<span ng-repeat-start="line in buffer track by $index" >[{{line.time | date:"HH:mm:ss"}}]</span>
+	<span>{{line.message}}</span>
+	<br ng-repeat-end/>
+</div>
+<input type="text" id="input-box" ng-model="inputText" >
