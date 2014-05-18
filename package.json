@@ -1,0 +1,30 @@
+{
+  "name": "squelch",
+  "version": "0.0.0",
+  "description": "An IRC Client",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "irc",
+    "chat",
+    "node-webkit",
+    "angular"
+  ],
+  "author": "Rahat Ahmed <rahatarmanahmed@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-node-webkit-builder": "~0.1.21",
+    "coffee-script": "~1.7.1",
+    "grunt-contrib-coffee": "~0.10.1",
+    "nodewebkit": "~0.8.6-2",
+    "grunt-exec": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0"
+  },
+  "dependencies": {}
+}

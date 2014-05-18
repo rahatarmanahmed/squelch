@@ -1,0 +1,30 @@
+{
+  "name": "squelch",
+  "version": "0.0.0",
+  "authors": [
+    "Rahat Ahmed <rahatarmanahmed@gmail.com>"
+  ],
+  "description": "An IRC Client",
+  "main": "app/index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "irc"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16",
+    "fontawesome": "~4.0.3",
+    "angular-bootstrap-nav-tree": "*",
+    "angular-ui-router": "~0.2.10"
+  }
+}

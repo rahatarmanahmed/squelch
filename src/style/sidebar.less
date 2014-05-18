@@ -1,0 +1,41 @@
+@import "./style";
+
+#sidebar {
+	background-color: #222;
+	color: #CCC;
+	font-size: 13px;
+	text-shadow: 0px 1px 1px black;
+	width: 200px;
+	height: 100%;
+	float: left;
+	
+	
+	.section-title {
+		font-size: 14;
+		color: #777;
+		.margin-reset;
+		padding-left: 8px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	.margin-reset;
+	.abn-tree {
+		list-style-type: none;
+		.margin-reset;
+		li {
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		li.active {
+			background-color: #454545;
+			color: #EEE
+		}
+		li > a {
+			display: block;
+			.margin-reset
+		}
+		.channel {
+			color: #888;
+		}
+	}
+}
