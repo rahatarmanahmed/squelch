@@ -1,5 +1,7 @@
 # This project has been moved to https://github.com/squelch-irc/squelch
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rahatarmanahmed/squelch.svg)](https://greenkeeper.io/)
+
 This is also an outdated version that was abandoned. See above link for up to date version.
 
 # Squelch
